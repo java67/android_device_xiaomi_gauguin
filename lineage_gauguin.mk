@@ -17,25 +17,23 @@ $(call inherit-product, device/xiaomi/gauguin/device.mk)
 # Inherit some common Lineage stuff.
 $(call inherit-product, vendor/lineage/config/common_full_phone.mk)
 
-# Device identifier. This must come after all inclusions.
+PRODUCT_BRAND := xiaomi
+PRODUCT_DEVICE := gauguin
+PRODUCT_MANUFACTURER := xiaomi
 PRODUCT_NAME := lineage_gauguin
-PRODUCT_BRAND := Xiaomi
-PRODUCT_DEVICE := M2007J17C
-PRODUCT_MANUFACTURER := Xiaomi
-PRODUCT_MODEL := M2007J17C
+PRODUCT_MODEL := lineage_gauguin
+
+PRODUCT_GMS_CLIENTID_BASE := android-xiaomi
+TARGET_VENDOR := xiaomi
+TARGET_VENDOR_PRODUCT_NAME := gauguin
+PRODUCT_BUILD_PROP_OVERRIDES += PRIVATE_BUILD_DESC="lineage_gauguin-userdebug 10 QQ3A.200805.001 eng.adarsh.20210205.132411 test-keys"
+
+# Set BUILD_FINGERPRINT variable to be picked up by both system and vendor build.prop
+BUILD_FINGERPRINT := Xiaomi/lineage_gauguin/gauguin:10/QQ3A.200805.001/adarsh02051324:userdebug/test-keys
+
 
 # Boot animation
 TARGET_SCREEN_HEIGHT := 2400
 TARGET_SCREEN_WIDTH := 1080
-
-# Build info
-BUILD_FINGERPRINT := Redmi/gauguinpro/gauguinpro:10/QKQ1.200628.002/V12.0.8.0.QJSCNXM:user/release-keys
-PRODUCT_SYSTEM_DEFAULT_PROPERTIES += \
-    ro.build.fingerprint=$(BUILD_FINGERPRINT)
-
-PRODUCT_BUILD_PROP_OVERRIDES += \
-    TARGET_DEVICE=gauguin \
-    PRODUCT_NAME=gauguin \
-    PRIVATE_BUILD_DISC="gauguinpro/gauguinpro:10/QKQ1.200628.002/V12.0.8.0.QJSCNXM:user/release-keys"
 
 PRODUCT_GMS_CLIENTID_BASE := android-xiaomi
