@@ -19,36 +19,23 @@ $(call inherit-product, vendor/lineage/config/common_full_phone.mk)
 
 # Device identifier. This must come after all inclusions.
 PRODUCT_NAME := lineage_gauguin
-PRODUCT_DEVICE := gauguin
-PRODUCT_BRAND := Redmi
-PRODUCT_MODEL := Redmi Note 9 Pro
-PRODUCT_MANUFACTURER := Redmi
-
-# PixelGApps
-TARGET_GAPPS_ARCH := arm64
-TARGET_INCLUDE_STOCK_ARCORE := true
-TARGET_SUPPORTS_GOOGLE_RECORDER := true
-TARGET_SHIPS_SEPERATE_GAPPS_BUILD := true
+PRODUCT_BRAND := Xiaomi
+PRODUCT_DEVICE := M2007J17C
+PRODUCT_MANUFACTURER := Xiaomi
+PRODUCT_MODEL := M2007J17C
 
 # Boot animation
 TARGET_SCREEN_HEIGHT := 2400
 TARGET_SCREEN_WIDTH := 1080
 
-#Device Maintainers
-PRODUCT_BUILD_PROP_OVERRIDES += \
-    DEVICE_MAINTAINERS="NameLess"
-
-# Adds face unlock if package is available on ROM source.
-TARGET_SUPPORT_FACE_UNLOCK := true
-
 # Build info
-BUILD_FINGERPRINT := google/redfin/redfin:11/RQ1A.201205.010/6953398:user/release-keys
+BUILD_FINGERPRINT := Redmi/gauguinpro/gauguinpro:10/QKQ1.200628.002/V12.0.8.0.QJSCNXM:user/release-keys
 PRODUCT_SYSTEM_DEFAULT_PROPERTIES += \
     ro.build.fingerprint=$(BUILD_FINGERPRINT)
 
 PRODUCT_BUILD_PROP_OVERRIDES += \
     TARGET_DEVICE=gauguin \
     PRODUCT_NAME=gauguin \
-    PRIVATE_BUILD_DISC="redfin/redfin:11/RQ1A.201205.010/6953398:user/release-keys"
+    PRIVATE_BUILD_DISC="gauguinpro/gauguinpro:10/QKQ1.200628.002/V12.0.8.0.QJSCNXM:user/release-keys"
 
 PRODUCT_GMS_CLIENTID_BASE := android-xiaomi
