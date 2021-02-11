@@ -1,34 +1,54 @@
 #
-# Copyright (C) 2021 The exTHmUI Open Source Project
+# Copyright (C) 2020 Lineage OS
 #
-# Licensed under the Apache License, Version 2.0 (the "License");
-# you may not use this file except in compliance with the License.
-# You may obtain a copy of the License at
+# SPDX-License-Identifier: Apache-2.0
 #
-#      http://www.apache.org/licenses/LICENSE-2.0
-#
-# Unless required by applicable law or agreed to in writing, software
-# distributed under the License is distributed on an "AS IS" BASIS,
-# WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
-# See the License for the specific language governing permissions and
-# limitations under the License.
-#
+
+# ANXCamera
+$(call inherit-product, vendor/ANXCamera/config.mk)
 
 # Inherit from those products. Most specific first.
 $(call inherit-product, $(SRC_TARGET_DIR)/product/core_64_bit.mk)
 $(call inherit-product, $(SRC_TARGET_DIR)/product/full_base_telephony.mk)
-$(call inherit-product, $(SRC_TARGET_DIR)/product/product_launched_with_p.mk)
 
 # Inherit from gauguin device
 $(call inherit-product, device/xiaomi/gauguin/device.mk)
 
-# Inherit some common LineageOS stuff.
+# Inherit some common Lineage stuff.
 $(call inherit-product, vendor/lineage/config/common_full_phone.mk)
 
+# Device identifier. This must come after all inclusions.
 PRODUCT_NAME := lineage_gauguin
-PRODUCT_BRAND := xiaomi
-PRODUCT_DEVICE := M2007J17C
-PRODUCT_MANUFACTURER := xiaomi
-PRODUCT_MODEL := M2007J17C
+PRODUCT_DEVICE := gauguin
+PRODUCT_BRAND := Redmi
+PRODUCT_MODEL := Redmi Note 9 Pro
+PRODUCT_MANUFACTURER := Redmi
 
-BUILD_FINGERPRINT := Redmi/gauguinpro/gauguinpro:10/QKQ1.200628.002/V12.0.8.0.QJSCNXM:user/release-keys
+# PixelGApps
+TARGET_GAPPS_ARCH := arm64
+TARGET_INCLUDE_STOCK_ARCORE := true
+TARGET_SUPPORTS_GOOGLE_RECORDER := true
+TARGET_SHIPS_SEPERATE_GAPPS_BUILD := true
+
+# Boot animation
+TARGET_SCREEN_HEIGHT := 2400
+TARGET_SCREEN_WIDTH := 1080
+
+#Device Maintainers
+PRODUCT_BUILD_PROP_OVERRIDES += \
+    DEVICE_MAINTAINERS="NameLess"
+
+# Adds face unlock if package is available on ROM source.
+TARGET_SUPPORT_FACE_UNLOCK := true
+
+# Build info
+BUILD_FINGERPRINT := google/redfin/redfin:11/RQ1A.201205.010/6953398:user/release-keys
+PRODUCT_SYSTEM_DEFAULT_PROPERTIES += \
+    ro.build.fingerprint=$(BUILD_FINGERPRINT)
+
+PRODUCT_BUILD_PROP_OVERRIDES += \
+    TARGET_DEVICE=gauguin \
+    PRODUCT_NAME=gauguin \
+    PRIVATE_BUILD_DISC="redfin/redfin:11/RQ1A.201205.010/6953398:user/release-keys"
+
+PRODUCT_GMS_CLIENTID_BASE := android-xiaomi
