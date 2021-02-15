@@ -27,4 +27,4 @@ BOARD_PREBUILT_DTBOIMAGE := $(DEVICE_PATH)/prebuilt/dtbo
 TARGET_PRODUCT_PROP += $(DEVICE_PATH)/product.prop
 
 # inherit from the proprietary version
--include vendor/xiaomi/gauguin/BoardConfigVendor.mk
+# -include vendor/xiaomi/gauguin/BoardConfigVendor.mk
