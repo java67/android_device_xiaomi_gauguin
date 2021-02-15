@@ -18,7 +18,7 @@ PRODUCT_NAME := lineage_gauguin
 PRODUCT_DEVICE := gauguin
 PRODUCT_MANUFACTURER := Xiaomi
 PRODUCT_BRAND := Xiaomi
-PRODUCT_MODEL := Xiaomi Mi 10T Lite
+PRODUCT_MODEL := Mi 10T Lite
 
 PRODUCT_GMS_CLIENTID_BASE := android-xiaomi
 
