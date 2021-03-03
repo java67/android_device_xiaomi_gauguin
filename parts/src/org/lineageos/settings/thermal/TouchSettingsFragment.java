@@ -13,7 +13,7 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-package org.lineageos.settings.thermal;
+package org.mokee.settings.thermal;
 
 import android.app.ActionBar;
 import android.content.SharedPreferences;
@@ -24,8 +24,8 @@ import androidx.preference.PreferenceFragment;
 import androidx.preference.PreferenceManager;
 import androidx.preference.SwitchPreference;
 
-import org.lineageos.settings.R;
-import org.lineageos.settings.widget.SeekBarPreference;
+import org.mokee.settings.R;
+import org.mokee.settings.widget.SeekBarPreference;
 
 public class TouchSettingsFragment extends PreferenceFragment
         implements SharedPreferences.OnSharedPreferenceChangeListener {

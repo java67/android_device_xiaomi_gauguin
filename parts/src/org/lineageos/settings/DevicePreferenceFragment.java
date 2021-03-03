@@ -14,7 +14,7 @@
  * limitations under the License.
  */
 
-package org.lineageos.settings;
+package org.mokee.settings;
 
 import android.os.Bundle;
 
@@ -22,7 +22,7 @@ import androidx.preference.ListPreference;
 import androidx.preference.Preference;
 import androidx.preference.PreferenceFragment;
 
-import org.lineageos.settings.utils.RefreshRateUtils;
+import org.mokee.settings.utils.RefreshRateUtils;
 
 public class DevicePreferenceFragment extends PreferenceFragment {
     private static final String KEY_MIN_REFRESH_RATE = "pref_min_refresh_rate";

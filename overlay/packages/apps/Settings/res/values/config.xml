@@ -22,7 +22,7 @@
     <integer name="config_fingerprintSensorLocation">3</integer>
 
     <!-- Device specific doze package -->
-    <string name="config_customDozePackage">org.lineageos.settings/org.lineageos.settings.doze.DozeSettingsActivity</string>
+    <string name="config_customDozePackage">org.mokee.settings/org.mokee.settings.doze.DozeSettingsActivity</string>
 
     <!-- Whether to show a preference item for mobile plan -->
     <bool name="config_show_mobile_plan">false</bool>

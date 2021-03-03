@@ -5,9 +5,8 @@
 #
 
 PRODUCT_MAKEFILES := \
-    $(LOCAL_DIR)/aosp_gauguin.mk
+    $(LOCAL_DIR)/mokee_gauguin.mk
 
 COMMON_LUNCH_CHOICES := \
-    aosp_gauguin-user \
-    aosp_gauguin-userdebug \
-    aosp_gauguin-eng
+    mokee_gauguin-userdebug \
+    mokee_gauguin-eng

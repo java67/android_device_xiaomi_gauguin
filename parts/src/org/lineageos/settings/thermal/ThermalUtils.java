@@ -14,7 +14,7 @@
  * limitations under the License.
  */
 
-package org.lineageos.settings.thermal;
+package org.mokee.settings.thermal;
 
 import android.content.Context;
 import android.content.Intent;
@@ -27,7 +27,7 @@ import android.view.WindowManager;
 
 import androidx.preference.PreferenceManager;
 
-import org.lineageos.settings.utils.FileUtils;
+import org.mokee.settings.utils.FileUtils;
 
 import vendor.xiaomi.hardware.touchfeature.V1_0.ITouchFeature;
 

@@ -14,16 +14,16 @@
  * limitations under the License.
  */
 
-package org.lineageos.settings;
+package org.mokee.settings;
 
 import android.content.BroadcastReceiver;
 import android.content.Context;
 import android.content.Intent;
 
-import org.lineageos.settings.dirac.DiracUtils;
-import org.lineageos.settings.doze.DozeUtils;
-import org.lineageos.settings.utils.RefreshRateUtils;
-import org.lineageos.settings.thermal.ThermalUtils;
+import org.mokee.settings.dirac.DiracUtils;
+import org.mokee.settings.doze.DozeUtils;
+import org.mokee.settings.utils.RefreshRateUtils;
+import org.mokee.settings.thermal.ThermalUtils;
 
 public class BootCompletedReceiver extends BroadcastReceiver {
 
