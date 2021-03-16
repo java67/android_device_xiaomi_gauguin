@@ -1,0 +1,2 @@
+#============= hal_fingerprint ==============
+allow hal_fingerprint system_data_root_file:file { append getattr open read write };

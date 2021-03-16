@@ -1,0 +1,2 @@
+#============= hal_health ==============
+allow hal_health sysfs:file { getattr open read };
