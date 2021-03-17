@@ -1,0 +1,2 @@
+#============= cnd ==============
+allow cnd diag_device:chr_file { read write };

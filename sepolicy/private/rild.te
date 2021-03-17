@@ -1,0 +1,3 @@
+#============= rild ==============
+allow rild default_prop:file read;
+allow rild minidump_data_file:dir search;

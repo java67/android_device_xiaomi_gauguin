@@ -1,0 +1,2 @@
+#============= hal_capabilityconfigstore_qti ==============
+allow hal_capabilityconfigstore_qti vendor_cap_configstore_dbg_prop:file read;

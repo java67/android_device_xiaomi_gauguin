@@ -1,0 +1,5 @@
+#============= vendor_init ==============
+allow vendor_init default_prop:file read;
+allow vendor_init persist_debug_prop:file read;
+allow vendor_init system_data_file:dir create;
+allow vendor_init vendor_sys_video_prop:property_service set;

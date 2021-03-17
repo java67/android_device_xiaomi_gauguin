@@ -1,0 +1,2 @@
+#============= displayfeature ==============
+allow displayfeature self:capability dac_override;

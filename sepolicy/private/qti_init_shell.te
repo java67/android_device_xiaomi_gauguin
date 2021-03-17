@@ -1,0 +1,5 @@
+#============= qti_init_shell ==============
+allow qti_init_shell ctl_stop_prop:property_service set;
+allow qti_init_shell debugfs:file write;
+allow qti_init_shell default_prop:file read;
+allow qti_init_shell toolbox_exec:file getattr;

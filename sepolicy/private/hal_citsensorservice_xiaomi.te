@@ -1,0 +1,4 @@
+#============= hal_citsensorservice_xiaomi ==============
+allow hal_citsensorservice_xiaomi default_prop:file read;
+allow hal_citsensorservice_xiaomi diag_device:chr_file { read write };
+allow hal_citsensorservice_xiaomi ion_device:chr_file read;
