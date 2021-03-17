@@ -1,2 +1,3 @@
 #============= hvdcp ==============
+type hvdcp, domain;
 allow hvdcp kmsg_device:chr_file { getattr write };

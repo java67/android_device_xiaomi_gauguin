@@ -1,4 +1,5 @@
 #============= qti_init_shell ==============
+type qti_init_shell, domain;
 allow qti_init_shell ctl_stop_prop:property_service set;
 allow qti_init_shell debugfs:file write;
 allow qti_init_shell default_prop:file read;

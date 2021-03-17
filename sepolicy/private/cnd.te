@@ -1,2 +1,4 @@
 #============= cnd ==============
+type cnd, domain;
+type diag_device, domain;
 allow cnd diag_device:chr_file { read write };

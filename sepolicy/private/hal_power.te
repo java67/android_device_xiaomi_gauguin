@@ -1,3 +1,4 @@
+type hal_touchfeature_xiaomi_default, domain;
 allow hal_power input_device:chr_file rw_file_perms;
 allow hal_power hal_touchfeature_xiaomi_hwservice:hwservice_manager find;
-allow hal_power hal_touchfeature_xiaomi:binder call;
+allow hal_power hal_touchfeature_xiaomi_default:binder call;

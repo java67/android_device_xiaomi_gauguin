@@ -1,2 +1,3 @@
 #============= displayfeature ==============
+type displayfeature, domain;
 allow displayfeature self:capability dac_override;

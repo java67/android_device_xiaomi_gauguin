@@ -1,2 +1,4 @@
 #============= vendor_per_mgr ==============
+type vendor_per_mgr, domain;
+type debugfs_ipc, domain;
 allow vendor_per_mgr debugfs_ipc:dir search;
